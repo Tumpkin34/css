@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버:회원가입</title>
+    <style>
+        body {
+            z-index: 1;
+            background-color: #F5F6F7;
+            width: 520px;
+            margin: 0 auto;
+            font-family: 돋움;
+            font-weight: 700;
+        }
+
+        h1 img {
+            width: 165px;
+            height: 32px;
+        }
+
+        body h1 {
+            text-align: center;
+        }
+
+        input {
+            display: inline;
+            width: 334px;
+            height: 29px;
+            position: relative;
+            z-index: 2;
+            border: none;
+            padding: 0px;
+        }
+
+        #year {
+            width: 116px;
+            height: 29;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            height: 51px;
+            background-color: #FFFF;
+            border: 1px solid #DADADA;
+            padding: 10px 110px 10px 14px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        #month {
+            display: inline;
+            width: 116px;
+            height: 29px;
+            position: relative;
+            border: none;
+            padding: 0px;
+        }
+
+        table {}
+
+        .small-box {
+            display: inline-block;
+            position: relative;
+            width: 32%;
+            height: 51px;
+            background-color: #FFFF;
+            border: 1px solid #DADADA;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+
+        #address {
+            position: absolute;
+            top: 15px;
+            right: 13px;
+            color: #8E8E8E;
+            font-weight: 500;
+        }
+
+        .locker {
+            position: absolute;
+            top: 10px;
+            right: 13px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .pw-lock {
+            /* content: ''; */
+            /* display: inline-block; */
+            top: 50%;
+            right: 13px;
+            width: 24px;
+            height: 24px;
+            margin-top: 5px;
+            background-image: url("https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png");
+            background-size: 125px 75px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            <img src="https://ssl.pstatic.net/static/nid/join/m_logo_naver.png">
+        </h1>
+        <p>아이디<br>
+        <div class="input-box">
+            <input type="text">
+            <span id="address">@naver.com</span>
+        </div>
+        </p>
+        <p>비밀번호<br>
+        <div class="input-box">
+            <input type="text">
+            <span class="pw-lock"></span>
+        </div>
+        </p>
+        <p>비밀번호 재확인<br>
+        <div class="input-box">
+            <input type="text">
+            <img class="locker" src="자물쇠1.png">
+        </div>
+        </p>
+        <br>
+        <p>이름<br>
+        <div class="input-box">
+            <input type="text">
+        </div>
+        </p>
+        <p>생년월일<br>
+        <div>
+            <div class="small-box">
+                <input id="year" type="text" placeholder="년(4자)">
+            </div>
+            <div class="small-box">
+                <select name="month" id="month">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="small-box">
+                <input id="year" type="text" placeholder="일">
+            </div>
+        </div>
+        </p>
+
+    </div>
+</body>
+
+</html>

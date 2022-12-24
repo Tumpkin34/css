@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* body 자식 div들 중 첫번째 자식인 div */
+        body div:first-child{
+            color: green;
+            position: relative;
+            background: red;
+            top: 25px;
+        }
+
+        /* body 자식 div들 중 첫번째 자식 다음 div */
+        body div:first-child + div {
+            color: orange;
+        }
+
+        /* body div:first-child ~ div {
+            color: orange;
+        } */
+
+        /* nth-child(n) : n은 1부터 */
+        /* 자식요소에 대한 선택자 first-child, last-child가 nth-child(n)보다 우선순위가 높고 */
+        /* +, ~ 연산자도 nth-child(n)보다 우선순위가 더 높다. */
+        /* nth-child(n)를 사용하고 싶다면, 이외의 다른 자식요소 선택자 및 +, ~ 연산자가 이미 있는 지 확인하고 사용해야 한다. */
+        div:nth-child(3) {
+            color: red;
+        }
+
+        div#hot, div#marshmello, div#cake {
+            position: relative;
+            top: 25px;
+        }
+
+        div#hot{
+            background-color: purple;
+        }
+
+        /* z-index */
+        /* 요소끼리 겹쳐있을 경우 z축 수치를 조정할 수 있다. */
+        /* default는 0이지만, 1로 보통 시작하고 겹쳐질 때에는 코드 작성 순서를 기준으로 */
+        /* 가장 마지막인 태그가 가장 앞에 위치한다. */
+        /* z-index의 숫자를 줄여줌으로써 뒷쪽에 위치하도록 할 수 있고, */
+        /* z-index의 숫자를 늘여줌으로써 앞쪽에 위치하도록 할 수 있고. */
+        div{
+            z-index: 1;
+        }
+
+        div#marshmello{
+            background-color: yellow;
+            z-index: 2;
+        }
+        
+        div#cake{
+            background-color: aqua;
+            top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cookie">
+        <span>쿠키</span>
+    </div>
+    <div id="hot">
+        <span>핫초코</span>
+    </div>
+    <div id="marshmello">
+        <span>마시멜로우</span>
+    </div>
+    <div id="cake">
+        <span>케이크</span>
+    </div>
+</body>
+</html>

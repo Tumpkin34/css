@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 선택자와 클래스 선택자</title>
+    <style>
+        #blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        /* 동일한 우선순위일 경우 아래에 작성된 스타일이 적용된다. */
+        .blue {
+            color:blue;
+        }
+
+        #red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="blue red">banana</p>
+    <p id="red blue">apple</p><!-- 아이디 여러 개 작성으로 인한 오류 -->
+    <p class="red" id="blue">peach</p> <!-- id가 더 구체적이므로 class보다 우선순위가 높다. -->
+</body>
+</html>

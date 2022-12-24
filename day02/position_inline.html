@@ -1,0 +1,66 @@
+<!--
+    inline요소
+
+    position 속성(default는 static) static : 기준 없음(배치 불가능/ 기본값)
+    해당 태그의 영역의 끝을 기준으로 top, bottom, left, right를 사용할 수 있게 된다.
+
+    - relative 
+        현재 요소가 정상적으로 위치해야 할 곳부터 기준점이 된다.
+        이전 요소의 원래 위치에 영향을 받는다, 이전 요소에 상대적인 위치로 잡힌다.
+
+    - absolute
+        앞에 어떤 요소가 어디에 있든 상관없이 무조건 해당 위치로 이동한다.
+        무조건 브라우저를 기준점으로 삼는다. 막약 "top:0"을 작성하면 무조건 가장 위에 붙는다.
+        또한 "left:0"을 작성하면 무조건 겹치든 말든 상관없이 가장 왼쪽에 붙는다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        span.span1-rel {
+            position: relative;
+            top: 30px;
+            left: 20px;
+        }
+
+        span.span2-rel {
+            position: relative;
+            left: -100px;
+        }
+
+        span.span3-rel {
+            position: relative;
+            left: -140px;
+            top: 60px;
+        }
+
+        span.span1-abs {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        span.span2-abs {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+       
+        span.span3-abs {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <span class="span1-rel span1-abs">안녕하세요 저는 움직입니다.</span>
+    <span class="span2-rel span2-abs">토끼</span>
+    <span class="span3-rel span3-abs">거북이</span>
+</body>
+</html>

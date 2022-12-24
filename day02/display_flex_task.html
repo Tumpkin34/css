@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 배너</title>
+    <style>
+        div#flex-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        div img {
+            width: 100%;
+        }
+
+        div#float-wrap {
+            display: none;
+        }
+
+        div#float-wrap {
+            text-align: center;
+        }
+
+        div#float-container {
+            display: inline-block;
+        }
+
+        div#float-container div{
+            float: left;
+        }
+
+        @media (max-width: 854px) {
+            div#float-wrap {
+                display: block;
+            }
+
+            div#flex-wrap {
+                display: none;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- 3개의 이미지를 1열로 정렬한 뒤 전체 가운데 정렬을 하세요. -->
+    <div id="flex-wrap">
+        <div><img src="img1.jpg"></div>
+        <div><img src="img2.jpg"></div>
+        <div><img src="img3.jpg"></div>
+    </div>
+
+    <div id="float-wrap">
+        <div id="float-container">
+            <div><img src="img1.jpg"></div>
+            <div><img src="img2.jpg"></div>
+            <div><img src="img3.jpg"></div>
+        </div>
+    </div>
+
+</body>
+</html>

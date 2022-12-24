@@ -1,0 +1,266 @@
+*{
+    list-style: none;
+    font-family: 'NanumBarunGothic',Dotum,"돋움";
+}
+
+body{
+    margin: 0px;
+    
+}
+
+header {
+    display: block;
+    min-width: 1000px;
+    max-width: 1920px;
+    height: 62px;
+    position: relative;
+    text-align: center;
+}
+
+#menuBuger-box {
+    position: absolute;
+    display: block;
+    width: 107px;
+    height: 62px;
+    box-sizing: border-box;
+}
+
+#menuBuger-url{
+    display: flex;
+    padding: 23px 23px 21px;
+    box-sizing: border-box;
+    color: #17191d;
+    text-decoration: none;
+}
+
+span{
+    font: 16px NEXON Gothic;
+}
+
+.bugerImg{
+    display: inline-block;
+    background: transparent url(https://rs.nxfs.nexon.com/gnb/images/set_gnb.png);
+    background-color: #17191d;
+    background-position: 0 0;
+    width: 18px;
+    height: 16px;
+    box-sizing: border-box;
+    margin: 1px 11px 0 0;
+}
+
+#logo_nexon{
+    height: 100%;
+}
+
+.gnbBadge{
+    position: absolute;
+    top: 19px;
+    left: 18px;
+    height: 14px;
+    min-width: 14px;
+    text-align: center;
+    background-color: #07f;
+    border-radius: 7px;
+    color: #fff;
+    font: 10px malgun gothic;
+}
+
+.gnbPcbangBadge{
+    position: absolute;
+    top: 19px;
+    left: 18px;
+    display: inline;
+    background-image: url(https://rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png);
+    background-position: -50px -300px;
+    width: 22px;
+    height: 14px;
+}
+
+.gnbBarRight{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 62px;
+    width: 320px;
+    display: flex;
+}
+
+.gnbBox{
+    position: relative;
+    width: 33px;
+    height: 100%;
+    margin-right: 5px;
+    padding: 21px 5px 0 6px;
+    box-sizing: border-box;
+}
+
+.gnbJoin{
+    padding-top: 22px;
+    margin: 0 8px;
+    
+}
+
+#join_nexon{
+    font: 14px NEXON Gothic;
+    color: #17191d;
+    text-decoration: none;
+}
+
+.gnbCardImg{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: #191919 url(https://rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png) 0 0 no-repeat;
+}
+.gnbPcbang{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: #191919 url(https://rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png) 0 0 no-repeat;
+    background-position: 0 -50px;
+}
+
+.gnbLogin{
+    padding-top: 13px;
+    padding-right: 9px;
+    margin-right: 8px;
+}
+
+#gnbLoginStyle{
+    display: inline-block;
+    color: #080410;
+    border: 2px solid #17191d;
+    border-radius: 19px;
+    height: 25px;
+    width: 80px;
+    padding: 7px 16px 0;
+    font: 15px NEXON Gothic Bold;
+    text-decoration: none;
+}
+
+#mainBackground {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 1200px;
+    background: url(https://ssl.nexon.com/s2/game/maplestory/renewal/login_full/login_full_bg.jpg) #28252d center top no-repeat;
+    min-width: 1000px;
+    max-width: 1920px;
+}
+
+.sub_menu{
+    position: absolute;
+    top: 36px;
+    left: 40px;
+}
+
+.sub_home{
+    position: absolute;
+    top: 32px;
+    left: 87px;
+}
+
+.logo{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 1200px;
+    max-width: 1920px;
+    position: relative;
+}
+
+.login_text{
+    display: inline-block;
+    width: 100%;
+    margin-top: 119px;
+    text-align: center;
+}
+
+.full_login_wrap{
+    width: 580px;
+    height: 700px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.tab_wrap{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #448ef3;
+}
+
+.tab_menu{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.login_form01{
+    margin-top: 30px;
+}
+
+.id_input{
+    width: 100%;
+    height: 80px;
+    background-color: #17151c;
+    display: flex;
+    position: relative;
+}
+
+#eid{
+    background-color: #17151c;
+    border: none;
+    width: 76%;
+    height: 100%;
+    box-sizing: border-box;
+    text-indent: 23px;
+    font-size: 20px;
+    font-family: 'NanumBarunGothic',Dotum,"돋움";
+}
+
+.active{
+    background: url(https://ssl.nexon.com/s2/game/maplestory/renewal/login_full/id_chk_off.png) left 28px no-repeat;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    font-size: 18px;
+    padding-left: 33px;
+    color: #a3a3a3;
+    font-family: 'NanumBarunGothic',Dotum,"돋움";
+    line-height: 80px;
+}
+
+.pw_input{
+    width: 100%;
+    height: 80px;
+    margin-top: 2px;
+    line-height: 80px;
+}
+
+#epw{
+    background-color: #17151c;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-indent: 23px;
+    font-size: 20px;
+    font-family: 'NanumBarunGothic',Dotum,"돋움";
+    box-sizing: border-box;
+}
+
+.login_btn_wrap{
+    margin-top: 21px;
+}
+
+.mail_btn ul li a{
+    font-size: 18px;
+    color: #959497;
+    width: 100%;
+    display: flex;
+}
